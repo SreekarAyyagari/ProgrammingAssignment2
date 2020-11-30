@@ -1,4 +1,4 @@
-## Pair of functions that cache the inverse of a matrix
+## Pair of a functions that cache the inverse of a matrix
 ## Usage: Pass the result of a makeCacheMatrix call to cacheSolve 
 
 #' Useful function that set the matrix and the inverse in an environment
@@ -7,7 +7,7 @@
 #' x = makeCacheMatrix(matrix(rnorm(9), 3, 3))
 #' x$set(matrix(rnorm(16), 4, 4))
 makeCacheMatrix <- function(x = matrix()) {
-  # todo error if x is not a matrix
+  # todo error occurs if x is not a matrix
   inv <- NULL
   set <- function(y) {
     x <<- y
